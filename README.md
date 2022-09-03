@@ -36,7 +36,7 @@ Terms
   * Primary key values should never be reused
 
 Notes
-* Some DBMS have SQL extensions that add statements to standard SQL but all major DBMS suppor ANSI SQL
+* Some DBMS have SQL extensions that add statements to standard SQL but all major DBMS support ANSI SQL
 * There are many choices for a DBMS, cloud-based solutions from Google, Amazon, Microsoft, Oracle, and IBM as well as traditional desktop options such as MySQL, PostgreSQL, SQLite, and Microsoft SQL Server
 
 Up Next
