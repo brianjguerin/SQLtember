@@ -43,3 +43,36 @@ Up Next
 * Setup desktop DBMS
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 2: Retrieving Data
 * SQL Tutorial - Section 1: Introduction to SQL
+
+### September 2
+
+Completed
+* Downloaded MySQL and MySQL Workbench
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 2: Retrieving Data
+* SQL Tutorial - Section 1: Introduction to SQL
+
+Terms
+* Keyword - Reserved word that is part of the SQL language.  Be careful not to name tables or columns using a keyword.  Here is a [list of SQL reserved words](https://en.wikipedia.org/wiki/SQL_reserved_words)
+
+SQL Statements
+* SELECT - used to select which rows to return in a query
+* FROM - specifies which database / table the query should pull from
+* DISTINCT - returns only unique values of specified column, when more than one column is specified it will return the unqiue records / rows, not just the unique values in each column
+* LIMIT - tells DBMS to return no more than specified number of rows
+* OFFSET - used with LIMIT, specifies which row to start from
+
+Notes
+* SQL commands are terminated by a semicolon (;)
+* There are three ways to comment in SQL
+  * -- is typically used for single line comments
+  * Octothorpe (#) is also used for single line comments but less common
+  * /* */ is used for multi-line comments
+* It is common practice to use uppercase for SQL keywords and lowercase for column and table names
+* SQL ignores extra white space
+* When using SELECT multiple column names are separated by commas
+* Using a wildcard (*) in a SELECT statement returns all columns
+* Rather than using OFFSET, you can use this syntax: LIMIT x,y where x is the offset and y is the limit
+  
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 3: Sorting Retrieved Data
+* I will skip the other tutorials for now as they seem redundant
