@@ -54,7 +54,7 @@ Completed
 Terms
 * Keyword - Reserved word that is part of the SQL language.  Be careful not to name tables or columns using a keyword.  Here is a [list of SQL reserved words](https://en.wikipedia.org/wiki/SQL_reserved_words)
 
-SQL Statements
+SQL
 * SELECT - used to select which rows to return in a query
 * FROM - specifies which database / table the query should pull from
 * DISTINCT - returns only unique values of specified column, when more than one column is specified it will return the unqiue records / rows, not just the unique values in each column
@@ -76,3 +76,27 @@ Notes
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 3: Sorting Retrieved Data
 * I will skip the other tutorials for now as they seem redundant
+
+### September 3
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 3: Sorting Retrieved Data
+
+Terms
+* Clause - SQL statements are made up of clauses, some required and some optional.  A clause usually consists of a keyword and data
+
+SQL
+* ORDER BY - Sorts output based on one or more columns
+* DESC - Specifies sort order descending (ascending is default).  Comes after the column argument in ORDER BY clause
+* ASC - Specifies sort order ascending.  Not necessary as ascending is the default
+
+Notes
+* You should not rely on the order of the returned results if ordering was not explicity specified
+* If using ORDER BY it must be the last clause in your SELECT statement
+* It is possible to sort output by a column that was not selected for display
+* When sorting by multiple columns use ORDER BY and separate columns with a comma.  Order matters and the output will be sorted by the first specified column, then by the next.  The second argument only comes into play if there are duplicate values in the first specified column
+* Position can be used for sorting by specifying the column numbers.  The column numbers refer to their position in the SELECT statement.  ORDER BY 2, 3 would be selecting the second then third columns specified in the SELECT statement.  This can be dangerous if you re-order or modify the SELECT statement later on
+* DESC will only apply to the column directly preceding it. If sorting DESC on multiple columns, it must be added after each
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 4: Filtering Data
