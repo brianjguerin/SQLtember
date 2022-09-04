@@ -55,11 +55,11 @@ Terms
 * Keyword - Reserved word that is part of the SQL language.  Be careful not to name tables or columns using a keyword.  Here is a [list of SQL reserved words](https://en.wikipedia.org/wiki/SQL_reserved_words)
 
 SQL
-* SELECT - used to select which rows to return in a query
-* FROM - specifies which database / table the query should pull from
-* DISTINCT - returns only unique values of specified column, when more than one column is specified it will return the unqiue records / rows, not just the unique values in each column
-* LIMIT - tells DBMS to return no more than specified number of rows
-* OFFSET - used with LIMIT, specifies which row to start from
+* SELECT - Used to select which rows to return in a query
+* FROM - Specifies which database / table the query should pull from
+* DISTINCT - Returns only unique values of specified column, when more than one column is specified it will return the unqiue records / rows, not just the unique values in each column
+* LIMIT - Tells DBMS to return no more than specified number of rows
+* OFFSET - Used with LIMIT, specifies which row to start from
 
 Notes
 * SQL commands are terminated by a semicolon (;)
@@ -100,3 +100,41 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 4: Filtering Data
+
+### September 4
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 4: Filtering Data
+
+Terms
+* NULL - No value as opposed to 0, empty string (''), or just spaces
+
+SQL
+* WHERE - Clause that filters data by specifying search criteria. Comes right after the table name / FROM clause
+* BETWEEN - Used in the WHERE clause to retrieve a range of values. Takes two values separated by AND as arguments. Return range includes the start and end of range
+* AND - Used to separate values of range for BETWEEN operator
+* IS NULL - Clause used in WHERE clause to check for columns with NULL values
+
+WHERE Clause Operators
+
+|Operator|Description|
+|---|---|
+|=|Equality|
+|<>|Nonequality|
+|!=|Nonequality|
+|<|Less than|
+|<=|Less than or equal to|
+|!<|Not less than|
+|>|Greater than|
+|>=|Greater than or equal to|
+|!>|Not greater than|
+|BETWEEN|Between two specified values|
+|IS NULL|Is a NULL value|
+
+Notes
+* Data can also be filtered by the tool that retrieves data from the DBMS rather than the DBMS itself. This is inefficient and can dramatically impact application performance
+* When using ORDER BY and WHERE, make sure ORDER BY comes after WHERE
+* Rows with NULL in the filter column are not returned when filtering for matches or nonmatches
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 5: Advanced Data Filtering
