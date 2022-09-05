@@ -138,3 +138,30 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 5: Advanced Data Filtering
+
+### September 5
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 5: Advanced Data Filtering
+
+Terms
+* Operator - A special keyword used to join or change clauses within a WHERE clause
+
+SQL
+* AND - Keyword used to append conditions to WHERE clause. Specifies that only rows matching all conditions should be retrieved
+* OR - Keyword used in WHERE clause to specify that any rows matching either of the specified conditions should be retrieved
+* IN - Keyword used in WHERE clause to specify a list of values to be matched using an OR comparison
+* NOT - Keyword used in WHERE clause to negate a condition
+
+Notes
+* When using AND all conditions must be true to retrieve a row.  When using OR rows are retrieved that meet at least one of the conditions
+* SQL evaluates AND operators before OR operators.  To get around this, you can group operators using paretheses.  Whenever using both AND and OR / IN operators in a WHERE clause, use parnetheses to explicitly group operators
+* IN accomplishes the same thing as OR.  Advantages to IN are as follows:
+  * Syntax is cleaner and easier to read
+  * Order of evaluation is easier to manage
+  * IN operators execute more quickly than OR
+  * IN operator can contain another select statement, enabling more dynamic WHERE clauses
+* NOT accomplishes same thing as <>.  The advantage of NOT comes in larger queries, especially when used in conjunction with IN and a list of values
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 6: Using Wildcard Filtering
