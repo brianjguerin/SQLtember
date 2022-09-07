@@ -165,3 +165,35 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 6: Using Wildcard Filtering
+
+### September 6
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 6: Using Wildcard Filtering
+
+Terms
+* Wildcards - Special characters used to match parts of a value
+* Search pattern - Search condition made up of literal text, wildcard characters, or any combination of the two
+* Predicate - Similar to operator, LIKE is a predicate
+
+SQL
+* Wildcards
+  * Percent sign (%) - Match any number of occurences of any character
+  * Underscore _ - Like percent, but matches only one character
+  * Brackets [] - Specifies a set of characters in a certain order. Not supported by most DBMS
+
+Notes
+* Wildcard filtering can only be used with text / strings
+* Searches may be case sensitive depending on DBMS
+* Wildcards can be used anywhere in search pattern and multiple wildcards can be used
+* % sign matches one or more characters but can also match zero characters
+* Beware trailing spaces.  These can throw off wildcard searches
+* % searches will not match NULL values
+* The caret (^) character negates bracket wildcards
+* Tips for Using Wildcards
+  * Don't overuse wildcards
+  * Try not to use them at the beginning of the search pattern unless absolutely necessary.  These are the slowest to process
+  * Pay careful attention to the placement of the symbols
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 7: Creating Calculated Fields
