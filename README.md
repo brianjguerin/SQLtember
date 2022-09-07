@@ -197,3 +197,37 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 7: Creating Calculated Fields
+
+### September 7
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 7: Creating Calculated Fields
+
+Terms
+* Field - Essentially same as database column but typically used to refer to a calculated field
+* Concatenate - Joining values together (by appending them to each other) to form a single long value
+
+SQL
+* Concatenation - + or || in most DBMS, Concat() with values separate by commas in MySQL
+* RTRIM() - Trims all space from the right of a value
+* LTRIM() - Trims all space from the left of a value
+* TRIM() - Trims all space from both sides of a value
+* AS - Used in the SELECT statement to create an alias for a calculated field
+
+Notes
+* Field calculations (conversions, reformatings, etc.) can be performed in the client application but as a rule it is quicker to perform these operations on the database side
+* Result of concatenation is an unnamed column which cannot be used by the client application since there is no way to refer to it
+* Aliases, also known as derived columns, allow client applciations to refer to calculated fields
+* Alias names should be either single words or complete strings.  Single word aliases are much safer as multiword names may create problems for client applications
+* You can test functions and calculations by omitting the FROM clause in the SELECT statement.  Only the result of your calculation will be returned
+* SQL supports the following mathematical operators for calculated fields:
+
+|Operator|Description|
+|---|---|
+|+|Addition|
+|-|Subtraction|
+|*|Multiplication|
+|/|Division|
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 8: Using Data Manipulation Functions
