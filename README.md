@@ -231,3 +231,48 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 8: Using Data Manipulation Functions
+
+### September 8
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 8: Using Data Manipulation Functions
+
+Terms
+* Functions - Operations that are usually performed on data to facilitate conversion and manipulation
+* Portable - Code that is written so that it will run on multiple different systems
+
+SQL
+* Commonly Used Text Manipulation Functions
+
+|Function|Description|
+|---|---|
+|LEFT()|Returns characters from left of string|
+|LENGTH()|Returns the length of a string|
+|LOWER()|Converts string to lowercase|
+|LTRIM()|Trims white space from left of string|
+|RIGHT()|Returns characters from right of string|
+|RTRIM()|Trims white space from right of string|
+|SUBSTR() or SUBSTRING()|Extracts part of a string|
+|SOUNDEX|Returns a string's SOUNDEX value|
+|UPPER()|Converts string to uppercase|
+
+* Commonly Used Numeric Manipulation Functions
+
+|Functions|Description|
+|---|---|
+|ABS()|Returns a number's absolute value|
+|COS()|Returns the trigonometric cosine of a specified angle|
+|EXP()|Returns the exponential value of a specific number|
+|PI()|Returns the value of Pi|
+|SIN()|Returns the trigonometric sine of a specified angle|
+|SQRT()|Returns the square root of a specified number|
+|TAN()|Returns the trigonometric tangent of a specified angle|
+
+Notes
+* Functions tend to be very DBMS specific.  Very few are supported identically by all major DBMSs
+* When using functions make sure to comment your code so you will know which SQL implementation you were writing to
+* SOUNDEX uses alphanumeric pattern describing the phonetic representation of that text.  Very cool concept and can come in handy when searching for names that are misspelled or mistyped
+* Date manipulation functions are among the least portable between DBMSs
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 9: Summarizing Data
