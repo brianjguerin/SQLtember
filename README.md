@@ -276,3 +276,36 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 9: Summarizing Data
+
+### September 9
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 9: Summarizing Data
+
+Terms
+* Aggregate Functions - Functions that operate on a set of rows to calculate and return a single value
+
+SQL
+* SQL Aggregate Functions
+
+|Function|Description|
+|---|---|
+|AVG()|Returns a column's average value|
+|COUNT()|Returns the number of rows in a column|
+|MAX()|Retruns a column's highest value|
+|MIN()|Retruns a column's lowest value|
+|SUM()|Returns the sum of a column's values|
+
+Notes
+* Columns containing NULL values are ignored by AVERAGE, MAX, MIN, SUM functions
+* Columns containing NULL values are ignored by COUNT function unless using *
+* Some DBMSs allow MAX to be used on textual columns.  MAX would return the row that would be last if the data were sorted by that column.  MIN would return the first row
+* All aggregate functions can be used to perform calculations on multiple columns using standard mathematical oeprators (SUM(quantity * price)) will return sum of expanded prices)
+* SUM and AVERAGE can be used with DISTINCT to count each unique value only once
+* Using DISTINCT with MIN and MAX serves no purpose as the value will not change
+* When using DISTINCT with COUNT a column must be specified, not a calculation or expression, and never with *
+* Depending on the DBMS TOP and TOP PERCENT can be used to perform calculations on a subset or queries
+* SELECT statements can contain multiple aggregate functions
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 10: Grouping Data
