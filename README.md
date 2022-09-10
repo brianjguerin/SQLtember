@@ -309,3 +309,45 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 10: Grouping Data
+
+### September 10
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 10: Grouping Data
+
+SQL
+* GROUP BY - Groups rows that have the same values into summary rows.  Often used with aggregate functions
+* HAVING - Similar to WHERE but used for filtering groups
+
+Terms
+
+Notes
+* GROUP BY clauses can contain as many columns as you want, allowing for nesting of groups
+* When you have nested GROUP BY statements, data is summarized at the last specified group.  All the statemetns are evaluated together, not by individual column
+* Most SQL implementations do not allow GROUP BY columns with variable-length datatypes (such as text or memo fields)
+* Every column listed in GROUP BY must be a retrieved column of a valid expression (but not an aggregate function)
+* Aside from aggregate calculations, every column in your SELECT statement must be present in the GROUP BY clause
+* If the grouping column contains a row with a NULL value, NULL will be returned as a group and all NULLs will be grouped together
+* GROUP BY clause must come after any WHERE clause and before any ORDER by clause
+* ORDER BY Versus GROUP BY:
+
+|ORDER BY|GROUP BY|
+|---|---|
+|Sorts generated output.|Groups rows. The output might not be in group order, however.|
+|Any columns (even columns not selected) may be used|Only selected columns or expressions columns may be used, and every selected column expression must be used.|
+|Never required.|Required if using columns (or expressions) with aggregate functions.|
+
+* As a rule you should always specify and ORDER BY clause any time you use a GROUP BY clause
+* SELECT Clauses and Their Sequence:
+
+|Clause|Description|Required|
+|---|---|---|
+|SELECT|Columns or expressions to be returned|Yes|
+|FROM|Table to retrieve data from|Only if selecting data from a table|
+|WHERE|Row-level filtering|No|
+|GROUP BY|Group specification|Only if calculating aggregates by group|
+|HAVING|Group-level filtering|No|
+|ORDER BY|Output sort order|No|
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 11: Working with Subqueries
