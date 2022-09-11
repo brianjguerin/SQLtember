@@ -351,3 +351,23 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 11: Working with Subqueries
+
+### September 11
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 11: Working with Subqueries
+
+SQL
+
+Terms
+* Query - Any SQL statement, usually used to refer to SELECT statements
+
+Notes
+* A subquery is a query nested within another query.  The inner-most query will be executed first
+* SELECT subqueries can only return one column
+* Subqueries can be used as calculated fields
+* When comparing information from different tables it is prudent to use the Table.column syntax so SQL knows exactly which column you are requesting
+* Subqueries may not be the most efficient way to retrieve data.  Often JOINs can work better
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 12: Joining Tables
