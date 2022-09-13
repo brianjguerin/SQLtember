@@ -371,3 +371,27 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 12: Joining Tables
+
+### September 12
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 12: Joining Tables
+
+SQL
+* INNER JOIN - Uses ON and a join condition to join two tables
+
+Terms
+* Scale - Able to handle an increasing load without failing.  Well-designed databases or applications are said to scale well
+* Cartesian Product - The results returned by a table relationship without a join condition. The number of rows retrieved will be the number of rows in the first table mulitiplied by the number of rows in the second table
+* Cross Join - Another term for cartesian product
+* Equijoin - Join based on testing of equality between two tables
+
+Notes
+* Relational databases exist so that information is not repetaed.  A table exists for each type of data.  These tables are related to each other through common values
+* Information is not repeated so space is not wasted, only one record needs to be updated if something changes, data is more consistent since there is no repeat entry of the same information
+* Joins do not exist in the database and persist only for the duration of the query execution
+* Make sure all joins have WHERE clauses, otherwise you will get far more data than you want
+* There is no limit to the number of tables that may be joined in a SELECT statement
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 13: Creating Advanced Joins
