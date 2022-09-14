@@ -383,7 +383,7 @@ SQL
 Terms
 * Scale - Able to handle an increasing load without failing.  Well-designed databases or applications are said to scale well
 * Cartesian Product - The results returned by a table relationship without a join condition. The number of rows retrieved will be the number of rows in the first table mulitiplied by the number of rows in the second table
-* Cross Join - Another term for cartesian product
+* Cross Join - Another term for Cartesian product
 * Equijoin - Join based on testing of equality between two tables
 
 Notes
@@ -395,3 +395,25 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 13: Creating Advanced Joins
+
+### September 13
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 13: Creating Advanced Joins
+
+SQL
+* LEFT OUTER JOIN - Joins all rows from left table with rows from right table even if there is no corresponding row in right table
+* RIGHT OUTER JOIN - Joins all rows from right table with rows from left table even if there is no corresponding row in left table
+* FULL OUTER JOIN - Joins all rows from both tables and relates all those that can be related, not available in MySQL
+
+Terms
+* Self Joins - A join where the a table is joined with iteself
+* Natural Joins - A join where only one occurence of each column shows up in the resulting table
+
+Notes
+* Most often you will want to use INNER JOIN
+* Always provide a join condition or you will end up with a Cartesian product
+* Multiple tables and join types can be combined but make sure to test them individually first
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 14: Combining Queries
