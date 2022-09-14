@@ -417,3 +417,27 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 14: Combining Queries
+
+### September 14
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 14: Combining Queries
+
+SQL
+* UNION - Used to combine multiple SELECT statements, outputs the results into a single result set
+
+Terms
+* Unions (Compound Queries) - Multiple queries that return a single result set
+
+Notes
+* For the most part, combining two quieries to the same table accomplishes the same thing as a single query with multiple WHERE clause conditions
+* A UNION must be composed to two or more SELECT statements, each separated by the keyword UNION
+* Each query in a UNION must contain the same columns, expressions, or aggregate functions
+* UNION column datatypes must be compatible
+* If SELECT statements that are combined with a UNION have different column names, the name in the first SELECT will be used
+* UNION automatically removes any duplicate rows from the result set
+* UNION ALL returns all results, including duplicate rows. There is no way to do this with a WHERE clause
+* When using UNION you may use only one ORDER BY clause and it must come after the final SELECT statement
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 15: Inserting Data
