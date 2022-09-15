@@ -441,3 +441,34 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 15: Inserting Data
+
+### September 15
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 15: Inserting Data
+
+SQL
+* INSERT - Used to add rows to a database or table
+* INTO - Used with INSERT to specify which table to add values to
+* VALUES - Clause used with INSERT to specify data to be added
+* CREATE TABLE - Creates a new database table
+
+Terms
+
+NOTES
+* INSERT can be used to add a partial row, complete row, or the results of a query
+* It is best to explicitly state the columns that are being added rather than rely on order.  Any SQL statements that rely on specific order are dangerous and will eventually break
+* If not using a column list, every column must be present when using INSERT.  If using a column list, the number of values must match the number of columns specified
+* When omitting columns in an INSERT statement, the table must allow NULL values or a default value must be specified in the table definition
+* When adding results of a query to a table, INSERT SELECT statement is used.  This is simply an INSERT statement followed by a SELECT statement rather than a VALUES clause
+* DBMS will ignore column names from the SELECT portion of INSERT SELECT statement and will rely on position
+* SELECT statement in INSERT SELECT can include WHERE clause to filter results before inserting
+* INSERT usually inserts only one row.  INSERT SELECT can insert many rows
+* CREATE SELECT can copy contents of one table into a new table
+* When copying data into a new table:
+  * Data can be filtered before copying
+  * Joins may be used to insert data from multiple tables
+  * Data may only be inserted into a single table regardless of how many tables data was retrieved from
+  
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 16: Updating and Deleting Data
