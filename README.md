@@ -67,7 +67,8 @@ Notes
   * -- is typically used for single line comments
   * Octothorpe (#) is also used for single line comments but less common
   * /* */ is used for multi-line comments
-* It is common practice to use uppercase for SQL keywords and lowercase for column and table names
+* It is common practice to use 
+case for SQL keywords and lowercase for column and table names
 * SQL ignores extra white space
 * When using SELECT multiple column names are separated by commas
 * Using a wildcard (*) in a SELECT statement returns all columns
@@ -455,7 +456,7 @@ SQL
 
 Terms
 
-NOTES
+Notes
 * INSERT can be used to add a partial row, complete row, or the results of a query
 * It is best to explicitly state the columns that are being added rather than rely on order.  Any SQL statements that rely on specific order are dangerous and will eventually break
 * If not using a column list, every column must be present when using INSERT.  If using a column list, the number of values must match the number of columns specified
@@ -472,3 +473,38 @@ NOTES
   
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 16: Updating and Deleting Data
+
+### September 16
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 16: Updating and Deleting Data
+
+SQL
+* UPDATE - Updates rows in a table with data specified
+* SET - Used with UPDATE to specify the columns to be changed and the desired values
+* DELETE - Removes data from a table
+* TRUNCATE TABLE - Deletes all rows from a table
+
+Terms
+
+Notes
+* Make sure to use WHERE in your UPDATE statement or else all rows will be updated
+* I am using MySQL and needed to turn off 'Safe Updates' in order to execute the queries in the book
+* UPDATE statement has the following three parts:
+  * Table to be updated (UPDATE)
+  * Column names and their values (SET)
+  * Filter condition that determines the rows to be updated (WHERE)
+* Omitting the WHERE clause in a DELETE statement will remove all the rows from a table
+* DELETE can remove all the rows from a table but will not delete a table
+* When removing all the rows from a table, it is quicker to use TRUNCATE TABLE
+* DELETE takes no column names or wildcards since it removes entire rows, not individual columns.  To delete columns you must use UPDATE
+* Guidelines for Updating and Deleting Data
+  * Never execute UPDATE or DELETE statement without a WHERE clause unless you intend to update or delete every row
+  * Make sure every table has a primary key and use it as the WHERE clause whenever possible
+  * Before using a WHERE clause with UPDATE or DELETE, test it with a SELECT to make sure it is filtering the correct data
+  * Use database-enforced referential integrity so that the DBMS will not allow the deletion of rows that have data in other tables related to them
+  * Some DBMS allow restrictions to prevent execution of UPDATE and DELETE without WHERE clauses.  These are worth considering
+* SQL has no undo button, UPDATE and DELETE are very easy to execute, be careful!
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 17: Creating and Manipulating Tables
