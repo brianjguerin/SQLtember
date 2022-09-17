@@ -508,3 +508,34 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 17: Creating and Manipulating Tables
+
+### September 17
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 17: Creating and Manipulating Tables
+
+SQL
+* CREATE TABLE - Creates new database table
+* DEFAULT - Specify default column value when creating a table
+* CURRENT_DATE() or NOW() - Used to get the system date in MySQL
+* ALTER TABLE - Used to update existing table
+* ADD - Clause used with ALTER TABLE to add column
+* DROP COLUMN - Clause used with ALTER TABLE to remove column
+* DROP TABLE - Deletes table
+* RENAME - Used to rename table
+
+Terms
+
+Notes
+* CREATE TABLE requires that you name the table and name and define the table columns
+* To replace an existing table, you must first remove it, then create a new one in its place.  This is to prevent users accidentally overwriting tables
+* All columns must either be NULL or NOT NULL as specified in the table definition.  NOT NULL requires values to be present
+* NULL is default setting, so if NOT NULL is not specified, NULL is assumed
+* Only columns that do not allow NULL values can be used in primary keys
+* SQL allows you to specify default values for columns with the DEFAULT keyword in the column definitions
+* When using ALTER TABLE you must specify the name of the table to be altered and the changes to be made
+* It is bad practice to alter tables once they contain data
+* Most DMBSs allow you to add or rename columns but do not allow you to remove or change columns in an existing table
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 18: Using Views
