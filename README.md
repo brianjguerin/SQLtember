@@ -567,10 +567,10 @@ Notes
   * Views can be nested.  The level of nesting depends on the DBMS
   * Many DBMSs prohibit the use of ORDER BY clause in view queries
   * Some DBMSs require that every column returned be named
-  * Views cannot be indexed, nor have triggers of default values associated with them
+  * Views cannot be indexed, nor have triggers or default values associated with them
   * Some DBMSs treat views as read-only queries, meaning you may only retrieve the data, not write back
   * Some DBMSs allow you to create views that do not allow rows to be inserted or updated if that insertion or update will cause that row to no longer be part of the view
 * To rename a view, you must first drop it and re-create it
   
 Up Next
-* Sam's Teach Yourself SQL in 10 Minutes - Chapter 19: 
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 19: Working with Stored Procedures
