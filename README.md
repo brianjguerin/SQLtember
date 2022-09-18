@@ -539,3 +539,38 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 18: Using Views
+
+### September 18
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 18: Using Views
+
+SQL
+* CREATE VIEW - Create a new view
+* DROP VIEW - Delete a view
+
+Terms
+* Views - Virtual tables that contain queries that dynamically retrieve data when used
+
+Notes
+* Why use views:
+  * To reuse SQL statements
+  * To simplify SQL operations.  You can reuse the query without knowing the underlying details
+  * To expose parts of a table instead of complete tables
+  * To secure data.  Users can be given access to a subset of a table
+  * To change data formatting and presentation
+* Since views retrieve data every time they are used, they can be slow
+* View Rules and Restrictions:
+  * Views must be uniquely named
+  * There is no limit to the number of views that can be created
+  * To create views you must have security access
+  * Views can be nested.  The level of nesting depends on the DBMS
+  * Many DBMSs prohibit the use of ORDER BY clause in view queries
+  * Some DBMSs require that every column returned be named
+  * Views cannot be indexed, nor have triggers of default values associated with them
+  * Some DBMSs treat views as read-only queries, meaning you may only retrieve the data, not write back
+  * Some DBMSs allow you to create views that do not allow rows to be inserted or updated if that insertion or update will cause that row to no longer be part of the view
+* To rename a view, you must first drop it and re-create it
+  
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 19: 
