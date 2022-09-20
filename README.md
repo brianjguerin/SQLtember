@@ -574,3 +574,22 @@ Notes
   
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 19: Working with Stored Procedures
+
+### September 19
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 19: Working with Stored Procedures
+
+SQL
+* EXECUTE - Run a stored procedure
+
+Terms
+* Stored Procedures - Collections of one or more SQL statements saved for future use
+
+Notes
+* Benefits of stored procedures are simplicity, security, and performance
+* Downsides are variation in syntax between DBMSs and complexity of writing them
+* Stored procedures (and really any code you write) should always include comments
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 20: Managing Transaction Processing
