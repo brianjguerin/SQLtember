@@ -593,3 +593,28 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 20: Managing Transaction Processing
+
+### September 20
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 20: Managing Transaction Processing
+
+SQL
+* SELECT TRANSACTION - Marks the start of a MySQL transation
+* ROLLBACK - Undo a transaction
+* COMMIT - Explicitly commit a transaction to a database table
+* SAVEPOINT - Create a placeholder for partially rolling back a transaction
+* ROLLBACK TO - Go back to a specific savepoint
+
+Terms
+* Transaction Processing - Mechanism used to manage sets of SQL operations that must be executed in batches so as to ensure that databases never contain the reults of partial operations
+* Transaction - A block of SQL statements
+* Rollback - The process of undoing specified SQL statements
+* Commit - Writing unsaved SQL statements to the database tables
+* Savepoint - A temporary placeholder in a transaction set to which you can issue a rollback
+
+Notes
+* INSERT, UPDATE, and DELETE operations can be rolled back, CREATE and DROP operations cannot
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 21: Using Cursors
