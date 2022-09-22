@@ -618,3 +618,23 @@ Notes
 
 Up Next
 * Sam's Teach Yourself SQL in 10 Minutes - Chapter 21: Using Cursors
+
+### September 21
+
+Completed
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 21: Using Cursors
+
+SQL
+* DECLARE CURSOR FOR - Declare / name a cursor
+* OPEN - Open cursor
+* CLOSE - Close cursor
+* FETCH - Retrieve a row from cursor to save into variable
+
+Terms
+* Result Set - The results returned by a SQL query
+* Cursor - A database query stored on a DBMS server - not a SELECT statement but the result set retrieved by that statement
+
+Notes
+
+Up Next
+* Sam's Teach Yourself SQL in 10 Minutes - Chapter 22: Understanding Advanced SQL Features
